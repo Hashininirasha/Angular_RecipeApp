@@ -25,6 +25,10 @@ export class ShoppingListComponent implements OnInit {
       } 
     );
     }
+
+    onEditItem(index: number){
+      this.slServices.stratedEditing.next(index);
+    }
   }
 
   // onIngredientAdded(ingredient: Ingredient) {
